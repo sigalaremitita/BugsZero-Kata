@@ -7,7 +7,7 @@ import com.adaptionsoft.games.uglytrivia.Game;
 
 public class GameRunner {
 
-	private static boolean notAWinner;
+	private static boolean notAWinner =true;
 
 	public static void main(String[] args) {
 		Random rand = new Random();
@@ -31,6 +31,7 @@ public class GameRunner {
 				notAWinner = aGame.wrongAnswer();
 			} else {
 				notAWinner = aGame.wasCorrectlyAnswered();
+				notAWinner=false;
 			}
 
 

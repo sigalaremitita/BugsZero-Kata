@@ -38,12 +38,12 @@ public class Game {
 		
 		
 	    players.add(playerName);
-	    places[howManyPlayers()] = 0;
-	    purses[howManyPlayers()] = 0;
-	    inPenaltyBox[howManyPlayers()] = false;
+	    places =howManyPlayers();
+	    purses= howManyPlayers();;
+	    inPenaltyBox= false;
 	    
-	    System.out.println(playerName + " was added");
-	    System.out.println("They are player number " + players.size());
+	    System.out.println(playerName +" -"+ " was added");
+	    System.out.println("They are player number " + howManyPlayers());
 		return true;
 	}
 	
@@ -159,7 +159,9 @@ public class Game {
 		return true;
 	}
 
-
+  public String removeFirst() {
+	 return "suppose to create the remove funtionality hear but no time";
+  }
 	private boolean didPlayerWin() {
 		return !(purses[currentPlayer] == 6);
 	}
